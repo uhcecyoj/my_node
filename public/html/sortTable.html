@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sort a HTML Table Alphabetically</title>
+<style>
+table {
+  border: 1px;
+  width: 50%;
+  border: 1px solid #ddd;
+}
+
+th {
+  cursor: pointer;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+</style>
+</head>
+<body>
+
+<p><strong>Click the headers to sort the table.</strong></p>
+<p>The first time you click, the sorting direction is ascending (A to Z).</p>
+<p>Click again, and the sorting direction will be descending (Z to A):</p>
+
+<table id="myTable">
+  <tr>
+   <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->  
+    <th onclick="sortTable(0)">N0</th>
+    <th onclick="sortTable(1)">Name</th>
+    <th onclick="sortTable(2)">Country</th>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+    <td>x7</td>
+    <td>Alfreds Futterkiste</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Paris specialites</td>
+    <td>France</td>
+  </tr>
+  <tr>
+    <td>x9</td>
+    <td>Koniglich Essen</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+    <td>x3</td>
+    <td>Paris specialites</td>
+    <td>France</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Berglunds snabbkop</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>x1</td>
+    <td>North/South</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td style="background-color: blue;">3</td>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+    <td>x3 blue</td>
+    <td>Paris specialites</td>
+    <td>France</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+    <td>x5</td>
+    <td>Paris specialites</td>
+    <td>France</td>
+  </tr>
+</table>
+<script type="text/javascript" src="./sort_table.js"></script>
+<script>
+
+</script>
+
+</body>
+</html>

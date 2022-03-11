@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "express": "^4.17.3",
+    "jquery": "^3.6.0",
+    "mysql": "^2.18.1",
+    "typescript": "^4.6.2"
+  }
+}
